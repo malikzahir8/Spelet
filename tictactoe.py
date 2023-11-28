@@ -57,6 +57,7 @@ def spelare1():
         except:
             print('Skriv ett nummer')
 
+# Funktion för datorns tur att spela
 def datormove():
     mojligutdrag = [x for x , bok in enumerate(tavla) if bok == ' ' and x != 0  ]
     flytta = 0
