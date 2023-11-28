@@ -63,9 +63,9 @@ def datormove():
 
     for let in ['O' , 'X']:
         for i in mojligutdrag:
-            boardcopy = tavla[:]
-            boardcopy[i] = let
-            if vinnare(boardcopy, let):
+            tavlakopiera = tavla[:]
+            tavlakopiera[i] = let
+            if vinnare(tavlakopiera, let):
                 flytta = i
                 return flytta
 
