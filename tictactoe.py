@@ -92,6 +92,7 @@ def datormove():
         flytta = valrandom(edgesOpen)
         return flytta
 
+# radnom nummer
 def valrandom(li):
     import random
     ln = len(li)
