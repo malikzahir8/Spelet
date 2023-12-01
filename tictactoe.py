@@ -131,7 +131,7 @@ def main():
             print("Du vann!")
             egenfunktion()
             break
-
+# Engen funktion för poäng
 
 
 # Om ingen vinner så händer det
@@ -149,3 +149,4 @@ while True:
         main()
     else:
         break
+# break om man skriver annat än Ja
