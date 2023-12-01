@@ -1,6 +1,12 @@
 # Den bästa koden för X O spelet
 tavla = [' ' for x in range(10)]
 
+# La till egen funktion, att ge random antal poäng om man vinner eller avgjort och 0 om man förolarar
+def egenfunktion():
+    import random
+    n = random.randint(0,100)
+    print(f"Du fick {n} poäng")
+
 # Alla funktioner
 def infoga(bok,punkt):
     tavla[punkt] = bok
@@ -110,6 +116,7 @@ def main():
             tavlakod(tavla)
         else:
             print("Du förlorade!")
+            print("Du fick 0 poäng")
             break
 
         if not(vinnare(tavla , 'X')):
@@ -122,6 +129,7 @@ def main():
                 tavlakod(tavla)
         else:
             print("Du vann!")
+            egenfunktion()
             break
 
 
@@ -129,9 +137,11 @@ def main():
 # Om ingen vinner så händer det
     if helatavlan(tavla):
         print("Oavgjort spel")
+        egenfunktion()
 
 # While loopen för att fråga varje gång
 while True:
+    print("Du kommer att möta världens top ett i spelet")
     x = input("Vill du spela? tryck på J för Ja och N för Nej (J/N)\n").lower()
     if x.lower() == 'j':
         tavla = [' ' for x in range(10)]
