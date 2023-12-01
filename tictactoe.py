@@ -4,8 +4,8 @@ tavla = [' ' for x in range(10)]
 # La till egen funktion, att ge random antal poäng om man vinner eller avgjort och 0 om man förolarar
 def egenfunktion():
     import random
-    n = random.randint(0,100)
-    print(f"Du fick {n} poäng")
+    nn = random.randint(0,100)
+    print(f"Du fick {nn} poäng")
 
 # Alla funktioner
 def infoga(bok,punkt):
